@@ -23,113 +23,129 @@
         .skills-list li { margin-bottom: 8px; }
     </style>
 </head>
-<body>  
-    <h1>Resume</h1>
+<body>
+
     <header>
-        <h1>Jake Wanderer</h1>
+      <h1>Jake Wanderer</h1>
     </header>
-
-    <div class="section">
-        <h2>Education</h2>
-        <div class="item-header">
-            <span>University of California, San Diego</span>
-            <span>Overall GPA: 3.98 (4.0 scale)</span>
+  
+    <section id="education">
+      <h2>Education</h2>
+      <article>
+        <div class="article-header">
+          <h3>University of California, San Diego</h3>
+          <span class="date">Overall GPA: 3.98</span>
         </div>
-        <div class="item-sub">Major: Data Science - Major GPA: 4.0</div>
+        <span class="subtitle">Major: Data Science (Major GPA: 4.0)</span>
         
-        <table>
-            <thead>
-                <tr>
-                    <th>Completed Relevant Coursework</th>
-                    <th>Planned Relevant Coursework</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>DSC10 - Principles of Data Science, Math18 - Linear Algebra,
-                        DSC20 - Programming and Basic Data Structures, Math20C - Multivariable Calculus DSC30 - Data
-                        Structures and Algorithms, DSC40A - Theoretical Foundations of Data Science, COGS14A - Research
-                        Methods, DSC80 - Practice of Data Science, DSC40B - Theoretical Foundations of Data Science II,
-                        COGS14B - Statistical Analysis, Math20D - Differential Equations, Math180A - Probability Theory,
-                        DSC100 - Sql and Databases</td>
-                    <td>DSC102 - Scalable Analytics (AWS, Spark), DSC140A - Probabilistic Modeling and ML, DSC106 - Data Visualization, DSC 152 - Applied Data Analysis</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="section">
-        <h2>Past Employment</h2>
-        <div class="item-header">
-            <span>Eichler Swim and Tennis Club</span>
-            <span>June 2022 - September 2025</span>
-        </div>
-        <div class="item-sub">Lifeguard (Summer Job)]</div>
+        <h4>Completed Relevant Coursework</h4>
         <ul>
-            <li>Monitored the pool and made quick decisions based on current conditions to ensure safety of patrons.</li>
-            <li>Collaborated with up to 3 guards to ensure safety, check chemical levels, and communicate with patrons.</li>
+          <li>DSC10 - Principles of Data Science</li>
+          <li>Math18 - Linear Algebra</li>
+          <li>DSC20 - Programming and Basic Data Structures</li>
+          <li>Math20C - Multivariable Calculus</li>
+          <li>DSC30 - Data Structures and Algorithms</li>
+          <li>DSC40A - Theoretical Foundations of Data Science</li>
+          <li>COGS14A - Research Methods</li>
+          <li>DSC80 - Practice of Data Science</li>
+          <li>DSC40B - Theoretical Foundations of Data Science II</li>
+          <li>COGS14B - Statistical Analysis</li>
+          <li>Math20D - Differential Equations</li>
+          <li>Math180A - Probability Theory</li>
+          <li>DSC100 - SQL and Databases</li>
         </ul>
-    </div>
-
-    <div class="section">
-        <h2>Experiences</h2>
-        
-        <div class="item-header">
-            <span>DS3 Project Mentor</span>
-            <span>Jan 2026 - Present</span>
-        </div>
+  
+        <h4>Planned Relevant Coursework</h4>
         <ul>
-            <li>Mentor a group of 4 students every quarter to complete a data science project.</li>
-            <li>The project includes a design document, code documentation, a final report or website, and a presentation.</li>
+          <li>DSC102 - Scalable Analytics (AWS, Spark)</li>
+          <li>DSC140A - Probabilistic Modeling and ML</li>
+          <li>DSC106 - Data Visualization</li>
+          <li>DSC 152 - Applied Data Analysis</li>
         </ul>
-
-        <div class="item-header">
-            <span>Basketball Court Keypoint Detection</span>
-            <span>Eclipse-Analytics Consulting Project</span>
+      </article>
+    </section>
+  
+    <section id="employment">
+      <h2>Past Employment</h2>
+      <article>
+        <div class="article-header">
+          <h3>Lifeguard</h3>
+          <span class="date">
+            <time datetime="2022-06">June 2022</time> – 
+            <time datetime="2025-09">September 2025</time>
+          </span>
         </div>
+        <span class="subtitle">Eichler Swim and Tennis Club (Summer Job)</span>
         <ul>
-            <li>Trained and evaluated a YOLO keypoint detection model to aid in evaluating basketball plays from video footage.</li>
-            <li>Additionally, used homography projection from the highest confidence keypoints to obtain all other necessary keypoints.</li>
+          <li>Monitored the pool and made quick decisions based on current conditions to ensure safety of patrons.</li>
+          <li>Collaborated with up to 3 guards to ensure safety, check chemical levels, and communicate with patrons.</li>
         </ul>
-
-        <div class="item-header">
-            <span>Facial Recognition Project</span>
-            <span>Self-Project</span>
+      </article>
+    </section>
+  
+    <section id="experience">
+      <h2>Experiences</h2>
+      
+      <article>
+        <div class="article-header">
+          <h3>DS3 Project Mentor</h3>
+          <span class="date">
+            <time datetime="2026-01">January 2026</time> – Present
+          </span>
         </div>
         <ul>
-            <li>Uses Pytorch to create a CNN to recognize similar faces.</li>
-            <li>Contrastive loss is used for model training.</li>
-            <li>Achieved an AUC of 971 and a mean separation of 63 between inter-class and intra-class distances.</li>
+          <li>Mentor a group of 4 students every quarter to complete a data science project.</li>
+          <li>Project deliverables include a design document, code documentation, a final report or website, and a presentation.</li>
         </ul>
-
-        <div class="item-header">
-            <span>League of Legends Win Rate Analysis</span>
-            <span>Class-Project</span>
-        </div>
+      </article>
+  
+      <article>
+        <h3>Basketball Court Keypoint Detection</h3>
+        <span class="subtitle">Eclipse-Analytics Consulting Project</span>
         <ul>
-            <li>Used a random forest model to predict the outcome of games.</li>
-            <li>Achieved a test accuracy of 85% and also assessed the importance of different features.</li>
+          <li>Trained and evaluated a YOLO keypoint detection model to aid in evaluating basketball plays from video footage.</li>
+          <li>Used homography projection from the highest confidence keypoints to obtain all other necessary keypoints.</li>
         </ul>
-
-        <div class="item-header">
-            <span>Chatbot using Stack Overflow Q&A</span>
-            <span>DS3 Club-Project</span>
-        </div>
+      </article>
+  
+      <article>
+        <h3>Facial Recognition Project</h3>
+        <span class="subtitle">Self-Project</span>
         <ul>
-            <li>Worked in a group of 4 to make a chatbot that retrieves answers from a Stack Overflow dataset based on user queries.</li>
-            <li>Prompted an LLM to answer the user query from retrieved answers (RAG).</li>
-            <li>This allowed the LLM to answer questions it otherwise could not and forced it to provide more conservative answers.</li>
+          <li>Utilized PyTorch to create a CNN to recognize similar faces using contrastive loss for model training.</li>
+          <li>Achieved an AUC of 0.971 and a mean separation of 63 between inter-class and intra-class distances.</li>
         </ul>
-    </div>
-
-    <div class="section">
-        <h2>Relevant Skills</h2>
-        <ul class="skills-list">
-            <li><strong>Languages:</strong> Python, Java, MySQL, PostgreSQL, SQLite3, MSSQL</li>
-            <li><strong>Libraries:</strong> Pandas, Pytorch, Sklearn, Matplotlib, Plotly, HuggingFace, BS4</li>
-            <li><strong>Additional Tools:</strong> Tableau, Excel, Git, GitHub, HuggingFace, AWS, Inferential Statistics</li>
+      </article>
+  
+      <article>
+        <h3>League of Legends Win Rate Analysis</h3>
+        <span class="subtitle">Class-Project</span>
+        <ul>
+          <li>Developed a random forest model to predict game outcomes, achieving a test accuracy of 85%.</li>
+          <li>Assessed the importance of different features within the model.</li>
         </ul>
-    </div>
+      </article>
+  
+      <article>
+        <h3>Chatbot using Stack Overflow Q&A</h3>
+        <span class="subtitle">DS3 Club-Project</span>
+        <ul>
+          <li>Collaborated in a group of 4 to develop a chatbot that retrieves answers from a Stack Overflow dataset based on user queries.</li>
+          <li>Prompted an LLM to answer user queries using Retrieval-Augmented Generation (RAG) for more accurate, conservative answers.</li>
+        </ul>
+      </article>
+    </section>
+  
+    <section id="skills">
+      <h2>Relevant Skills</h2>
+      <article>
+        <ul>
+          <li><strong>Languages:</strong> Python, Java, MySQL, PostgreSQL, SQLite3, MSSQL</li>
+          <li><strong>Libraries:</strong> Pandas, Pytorch, Sklearn, Matplotlib, Plotly, HuggingFace, BS4</li>
+          <li><strong>Additional Tools:</strong> Tableau, Excel, Git, GitHub, HuggingFace, AWS, Inferential Statistics</li>
+        </ul>
+      </article>
+    </section>
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
@@ -139,5 +155,5 @@
             <li><a href="https://github.com/JWanderer73" target="_blank">Github</a></li>
         </ul>
     </nav>
-</body>
+  </body>
 </html>
