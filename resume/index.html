@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake_Wanderer: Personal site and portfolio</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        header { text-align: center; border-bottom: 2px solid #2c3e50; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { margin: 0; color: #2c3e50; font-size: 2.5em; }
+        h2 { border-bottom: 1px solid #bdc3c7; padding-bottom: 5px; color: #2c3e50; text-transform: uppercase; letter-spacing: 1px; }
+        .contact-info { margin-top: 10px; font-size: 1.1em; }
+        .contact-info a { color: #3498db; text-decoration: none; }
+        .section { margin-bottom: 30px; }
+        .item-header { display: flex; justify-content: space-between; align-items: baseline; font-weight: bold; margin-bottom: 5px; }
+        .item-sub { font-style: italic; margin-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { text-align: left; padding: 12px; border: 1px solid #ecf0f1; }
+        th { background-color: #f9f9f9; width: 50%; }
+        ul { margin-top: 5px; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+        .skills-list { list-style-type: none; padding-left: 0; }
+        .skills-list li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>  
+    <h1>Resume</h1>
+    <header>
+        <h1>Jake Wanderer</h1>
+    </header>
+
+    <div class="section">
+        <h2>Education</h2>
+        <div class="item-header">
+            <span>University of California, San Diego</span>
+            <span>Overall GPA: 3.98 (4.0 scale)</span>
+        </div>
+        <div class="item-sub">Major: Data Science - Major GPA: 4.0</div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Completed Relevant Coursework</th>
+                    <th>Planned Relevant Coursework</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DSC10 - Principles of Data Science, Math18 - Linear Algebra,
+                        DSC20 - Programming and Basic Data Structures, Math20C - Multivariable Calculus DSC30 - Data
+                        Structures and Algorithms, DSC40A - Theoretical Foundations of Data Science, COGS14A - Research
+                        Methods, DSC80 - Practice of Data Science, DSC40B - Theoretical Foundations of Data Science II,
+                        COGS14B - Statistical Analysis, Math20D - Differential Equations, Math180A - Probability Theory,
+                        DSC100 - Sql and Databases</td>
+                    <td>DSC102 - Scalable Analytics (AWS, Spark), DSC140A - Probabilistic Modeling and ML, DSC106 - Data Visualization, DSC 152 - Applied Data Analysis</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Past Employment</h2>
+        <div class="item-header">
+            <span>Eichler Swim and Tennis Club</span>
+            <span>June 2022 - September 2025</span>
+        </div>
+        <div class="item-sub">Lifeguard (Summer Job)]</div>
+        <ul>
+            <li>Monitored the pool and made quick decisions based on current conditions to ensure safety of patrons.</li>
+            <li>Collaborated with up to 3 guards to ensure safety, check chemical levels, and communicate with patrons.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Experiences</h2>
+        
+        <div class="item-header">
+            <span>DS3 Project Mentor</span>
+            <span>Jan 2026 - Present</span>
+        </div>
+        <ul>
+            <li>Mentor a group of 4 students every quarter to complete a data science project.</li>
+            <li>The project includes a design document, code documentation, a final report or website, and a presentation.</li>
+        </ul>
+
+        <div class="item-header">
+            <span>Basketball Court Keypoint Detection</span>
+            <span>Eclipse-Analytics Consulting Project</span>
+        </div>
+        <ul>
+            <li>Trained and evaluated a YOLO keypoint detection model to aid in evaluating basketball plays from video footage.</li>
+            <li>Additionally, used homography projection from the highest confidence keypoints to obtain all other necessary keypoints.</li>
+        </ul>
+
+        <div class="item-header">
+            <span>Facial Recognition Project</span>
+            <span>Self-Project</span>
+        </div>
+        <ul>
+            <li>Uses Pytorch to create a CNN to recognize similar faces.</li>
+            <li>Contrastive loss is used for model training.</li>
+            <li>Achieved an AUC of 971 and a mean separation of 63 between inter-class and intra-class distances.</li>
+        </ul>
+
+        <div class="item-header">
+            <span>League of Legends Win Rate Analysis</span>
+            <span>Class-Project</span>
+        </div>
+        <ul>
+            <li>Used a random forest model to predict the outcome of games.</li>
+            <li>Achieved a test accuracy of 85% and also assessed the importance of different features.</li>
+        </ul>
+
+        <div class="item-header">
+            <span>Chatbot using Stack Overflow Q&A</span>
+            <span>DS3 Club-Project</span>
+        </div>
+        <ul>
+            <li>Worked in a group of 4 to make a chatbot that retrieves answers from a Stack Overflow dataset based on user queries.</li>
+            <li>Prompted an LLM to answer the user query from retrieved answers (RAG).</li>
+            <li>This allowed the LLM to answer questions it otherwise could not and forced it to provide more conservative answers.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Relevant Skills</h2>
+        <ul class="skills-list">
+            <li><strong>Languages:</strong> Python, Java, MySQL, PostgreSQL, SQLite3, MSSQL</li>
+            <li><strong>Libraries:</strong> Pandas, Pytorch, Sklearn, Matplotlib, Plotly, HuggingFace, BS4</li>
+            <li><strong>Additional Tools:</strong> Tableau, Excel, Git, GitHub, HuggingFace, AWS, Inferential Statistics</li>
+        </ul>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects/index.html">Projects</a></li>
+            <li><a href="../contact/index.html">Contact</a></li>
+            <li><a href="../resume/index.html">Resume</a></li>
+            <li><a href="https://github.com/JWanderer73" target="_blank">Github</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
