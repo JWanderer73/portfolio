@@ -1,6 +1,42 @@
+:root {
+  --color-accent: oklch(60% 20% 200);
+}
+
 body {
-    /* Set line height to 1.5 times the font size
-         and use the OS’s UI font as the website font
-       */
-    font: 100%/1.5 system-ui;
-  }
+  accent-color: var(--color-accent);
+  font: 100%/1.5 system-ui;
+  max-width: 100ch;
+  margin: auto;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  margin-bottom: 1rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: oklch(80% 3% 200);
+}
+
+nav ul, nav li {
+  display: contents;
+}
+
+nav a {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  padding: 0.5em;
+}
+
+nav a:hover {
+  border-bottom: 0.4em solid var(--color-accent);
+  padding-bottom: calc(0.5em - 0.4em);
+}
+
+nav a.current {
+  border-bottom: 0.4em solid oklch(80% 3% 200);
+  color: inherit;
+  padding-bottom: calc(0.5em - 0.4em);
+}
