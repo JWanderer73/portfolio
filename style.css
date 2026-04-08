@@ -40,3 +40,23 @@ nav a.current {
   color: inherit;
   padding-bottom: calc(0.5em - 0.4em);
 }
+
+input, textarea, button, select {
+  font: inherit;
+}
+
+form {
+  display: grid;
+  grid-template-columns: [labels] auto [controls] 1fr;
+  gap: 1em;
+}
+
+label {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
+
+form input[type="submit"] {
+  grid-column: 1 / -1;
+}
