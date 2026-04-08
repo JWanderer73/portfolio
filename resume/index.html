@@ -5,24 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jake_Wanderer: Personal site and portfolio</title>
     <link rel="stylesheet" href="../style.css">
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 40px auto; padding: 0 20px; }
-        header { text-align: center; border-bottom: 2px solid #2c3e50; padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin: 0; color: #2c3e50; font-size: 2.5em; }
-        h2 { border-bottom: 1px solid #bdc3c7; padding-bottom: 5px; color: #2c3e50; text-transform: uppercase; letter-spacing: 1px; }
-        .contact-info { margin-top: 10px; font-size: 1.1em; }
-        .contact-info a { color: #3498db; text-decoration: none; }
-        .section { margin-bottom: 30px; }
-        .item-header { display: flex; justify-content: space-between; align-items: baseline; font-weight: bold; margin-bottom: 5px; }
-        .item-sub { font-style: italic; margin-bottom: 10px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        th, td { text-align: left; padding: 12px; border: 1px solid #ecf0f1; }
-        th { background-color: #f9f9f9; width: 50%; }
-        ul { margin-top: 5px; padding-left: 20px; }
-        li { margin-bottom: 5px; }
-        .skills-list { list-style-type: none; padding-left: 0; }
-        .skills-list li { margin-bottom: 8px; }
-    </style>
 </head>
 <body>
   <nav>
@@ -45,7 +27,10 @@
           <h3>University of California, San Diego</h3>
           <span class="date">Overall GPA: 3.98</span>
         </div>
-        <span class="subtitle">Major: Data Science (Major GPA: 4.0)</span>
+        <div class="article-header">
+          <span class="subtitle">Major: Data Science</span>
+          <span class="date">Major GPA: 4.0</span>
+        </div>
         
         <h4>Completed Relevant Coursework</h4>
         <ul>
@@ -78,13 +63,12 @@
       <h2>Past Employment</h2>
       <article>
         <div class="article-header">
-          <h3>Lifeguard</h3>
+          <h3>Lifeguard <span class="subtitle">— Eichler Swim and Tennis Club (Summer Job)</span></h3>
           <span class="date">
-            <time datetime="2022-06">June 2022</time> – 
+            <time datetime="2022-06">June 2022</time> –
             <time datetime="2025-09">September 2025</time>
           </span>
         </div>
-        <span class="subtitle">Eichler Swim and Tennis Club (Summer Job)</span>
         <ul>
           <li>Monitored the pool and made quick decisions based on current conditions to ensure safety of patrons.</li>
           <li>Collaborated with up to 3 guards to ensure safety, check chemical levels, and communicate with patrons.</li>
@@ -109,8 +93,7 @@
       </article>
   
       <article>
-        <h3>Basketball Court Keypoint Detection</h3>
-        <span class="subtitle">Eclipse-Analytics Consulting Project</span>
+        <h3>Basketball Court Keypoint Detection <span class="subtitle">— Eclipse-Analytics Consulting Project</span></h3>
         <ul>
           <li>Trained and evaluated a YOLO keypoint detection model to aid in evaluating basketball plays from video footage.</li>
           <li>Used homography projection from the highest confidence keypoints to obtain all other necessary keypoints.</li>
@@ -118,8 +101,7 @@
       </article>
   
       <article>
-        <h3>Facial Recognition Project</h3>
-        <span class="subtitle">Self-Project</span>
+        <h3>Facial Recognition Project <span class="subtitle">— Self-Project</span></h3>
         <ul>
           <li>Utilized PyTorch to create a CNN to recognize similar faces using contrastive loss for model training.</li>
           <li>Achieved an AUC of 0.971 and a mean separation of 63 between inter-class and intra-class distances.</li>
@@ -127,8 +109,7 @@
       </article>
   
       <article>
-        <h3>League of Legends Win Rate Analysis</h3>
-        <span class="subtitle">Class-Project</span>
+        <h3>League of Legends Win Rate Analysis <span class="subtitle">— Class-Project</span></h3>
         <ul>
           <li>Developed a random forest model to predict game outcomes, achieving a test accuracy of 85%.</li>
           <li>Assessed the importance of different features within the model.</li>
@@ -136,8 +117,7 @@
       </article>
   
       <article>
-        <h3>Chatbot using Stack Overflow Q&A</h3>
-        <span class="subtitle">DS3 Club-Project</span>
+        <h3>Chatbot using Stack Overflow Q&A <span class="subtitle">— DS3 Club-Project</span></h3>
         <ul>
           <li>Collaborated in a group of 4 to develop a chatbot that retrieves answers from a Stack Overflow dataset based on user queries.</li>
           <li>Prompted an LLM to answer user queries using Retrieval-Augmented Generation (RAG) for more accurate, conservative answers.</li>

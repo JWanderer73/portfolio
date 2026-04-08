@@ -41,6 +41,15 @@ nav a.current {
   padding-bottom: calc(0.5em - 0.4em);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 400%;
+}
+
 input, textarea, button, select {
   font: inherit;
 }
@@ -59,4 +68,156 @@ label {
 
 form input[type="submit"] {
   grid-column: 1 / -1;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+.projects article {
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+}
+
+/* Resume page styles */
+.article-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #666;
+  white-space: nowrap;
+  margin-left: 1em;
+}
+
+
+header {
+  text-align: center;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  border-bottom: 1px solid #bdc3c7;
+  padding-bottom: 5px;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-info {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+.contact-info a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.item-sub {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #ecf0f1;
+}
+
+th {
+  background-color: #f9f9f9;
+  width: 50%;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+}
+
+/* Resume: left accent border + spacing on entries */
+section > article {
+  border-left: 3px solid var(--color-accent);
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  transition: background 0.15s ease;
+}
+
+section > article:hover {
+  background: oklch(60% 20% 200 / 0.05);
+}
+
+/* Resume: accent color on entry titles */
+section > article h3 {
+  color: var(--color-accent);
+}
+
+/* Resume: name/header area */
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #2c3e50;
+}
+
+/* Resume: skills as pill badges */
+#skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#skills li {
+  background: oklch(60% 20% 200 / 0.12);
+  border: 1px solid oklch(60% 20% 200 / 0.4);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85em;
+}
+
+/* Print styles */
+@media print {
+  nav, footer { display: none; }
+  body { max-width: 100%; padding: 0; }
+  section > article { break-inside: avoid; }
+  a { color: inherit; text-decoration: none; }
 }
