@@ -31,3 +31,46 @@ for (let p of pages) {
       }
     nav.append(a);
   }
+
+// Color scheme selector
+const schemeLabel = document.createElement('label');
+schemeLabel.className = 'color-scheme';
+schemeLabel.textContent = 'Color scheme:';
+
+const select = document.createElement('select');
+select.id = 'color-scheme';
+select.innerHTML = `
+  <option value="light dark">Auto</option>
+  <option value="light">Light</option>
+  <option value="dark">Dark</option>
+`;
+
+const savedScheme = localStorage.getItem('colorScheme') ?? 'light dark';
+document.documentElement.style.colorScheme = savedScheme;
+select.value = savedScheme;
+
+select.addEventListener('change', () => {
+  document.documentElement.style.colorScheme = select.value;
+  localStorage.setItem('colorScheme', select.value);
+});
+
+schemeLabel.append(select);
+document.body.append(schemeLabel);
+
+// Preload contact form email from localStorage and handle submission
+const emailInput = document.querySelector('#email');
+if (emailInput) {
+  emailInput.value = localStorage.getItem('userEmail') ?? '';
+  emailInput.addEventListener('change', () => {
+    localStorage.setItem('userEmail', emailInput.value);
+  });
+
+  const form = emailInput.closest('form');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const from = document.querySelector('#email').value;
+    const subject = encodeURIComponent(document.querySelector('#subject').value);
+    const message = encodeURIComponent(`From: ${from}\n\n${document.querySelector('#message').value}`);
+    location.href = `mailto:jakewanderer8@gmail.com?subject=${subject}&body=${message}`;
+  });
+}
