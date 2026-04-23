@@ -1,0 +1,67 @@
+[
+    {
+        "title": "Stackbot",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created a chatbot from Python StackOverflow questions and answers."
+    },
+    {
+        "title": "CodeBlue",
+        "year": "2026",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created a website to predict severity of future natural disasters, and link  people to local charities."
+    },
+    {
+        "title": "Basketball Court Keypoint Detection",
+        "year": "2026",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created a computer vision model to recognize keypoints on the basketball court. Also, used homography projection to reobtain low confidence points."
+    },
+    {
+        "title": "League of Legends Gold Difference Analysis",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Used a random forest model to predict the outcome of games. Achieved a test accuracy of 85% and also assessed the importance of different features."
+    },
+    {
+        "title": "Facial Recognition",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Uses Pytorch to create a CNN to recognize similar faces. Use contrastive loss for model training, and achieved an AUC of .971 and a mean separation of .63 between inter-class and intra-class distances"
+    },
+    {
+        "title": "Tenetur assumenda distinctio voluptatibus.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Officia voluptas ad aliquam eveniet est blanditiis quam, animi vel aperiam vero nam reprehenderit optio quibusdam corrupti doloremque labore, repellat laudantium beatae tenetur ut modi odio dolore excepturi rem. Vero."
+    },
+    {
+        "title": "Numquam quidem animi doloribus.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Animi quod, earum quam, ipsum nobis, illo explicabo ullam aspernatur corrupti nesciunt debitis. Possimus laborum ut distinctio ullam dolor ipsam tempora ducimus eos provident delectus impedit, amet perferendis tenetur minus."
+    },
+    {
+        "title": "Tempore libero a quod.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Maxime quisquam numquam provident dignissimos commodi eum incidunt deserunt, dolores culpa aliquam sed perferendis ad eius tenetur odio deleniti voluptas ea iusto est fuga eos. Numquam porro dolorem est amet!"
+    },
+    {
+        "title": "Exercitationem, necessitatibus! Placeat, illum.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Aspernatur ea quas libero eius dicta praesentium? Minima vero in, explicabo quibusdam quas laudantium deleniti fuga, aliquam iste animi molestiae aut aliquid iusto fugit omnis earum repellat? Ullam, veritatis impedit!"
+    },
+    {
+        "title": "Libero nulla ipsa dolorem.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Tempora voluptatibus, culpa quos assumenda officiis esse corporis modi facilis nemo dolorum cum eveniet, tempore, expedita ducimus. Eaque quia asperiores doloribus quam cum iure, veritatis repellendus nisi dolorum sapiente a."
+    },
+    {
+        "title": "Corrupti laboriosam consectetur minus!",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Reiciendis deserunt commodi at illum eos ab ut sit, in alias tempora odit corrupti repellendus cupiditate praesentium, repellat quisquam. Sapiente architecto distinctio, sit incidunt quaerat praesentium non voluptatum facilis accusamus!"
+    },
+    {
+        "title": "Ab quae consequuntur voluptate.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Voluptas ut quod laudantium magni facilis sint tenetur iste, natus illo, dolores accusantium quia neque. Odio quidem, reprehenderit numquam deleniti dolor alias nam eaque et libero explicabo. Ad, unde nesciunt."
+    }
+]
