@@ -6,10 +6,15 @@
     <title>Jake_Wanderer: Personal site and portfolio</title>
     <link rel="stylesheet" href="../style.css">
     <script type="module" src="../global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
     <script type="module" src="projects.js"></script>
 </head>
 <body>
     <h1 class="projects-title">Projects</h1>
+    <div class="chart-container">
+      <svg id="projects-pie-plot" viewBox="-50 -50 100 100"></svg>
+      <ul class="legend"></ul>
+    </div>
     <div class="projects">
     </div>
 </body>
