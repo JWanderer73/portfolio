@@ -333,18 +333,18 @@ header h1 {
   font-style: normal;
   opacity: 0.6;
 }
-&:has(path:hover) {
-  path:not(:hover) {
-    opacity: 0.5;
-  }
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
 }
-path {
-  transition: 300ms;
-}
-.selected {
-  --color: oklch(60% 45% 0) !important;
 
-  &:is(path) {
-    fill: var(--color);
-  }
+#projects-pie-plot path {
+  transition: 300ms;
+  cursor: pointer;
+}
+#projects-pie-plot:has(.selected) path:not(.selected) {
+  opacity: 0.5;
+}
+
+.legend li.selected {
+  font-weight: bold;
 }
