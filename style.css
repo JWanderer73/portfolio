@@ -356,11 +356,12 @@ dl.stats dt {
 }
 
 dl.stats dd {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   color: var(--color-accent);
   margin: 0;
   grid-row: 1;
+  overflow-wrap: break-word;
 }
 
 .gridlines line {
@@ -389,6 +390,10 @@ circle {
   transition: 200ms;
   transform-origin: center;
   transform-box: fill-box;
+
+  @starting-style {
+    r: 0;
+  }
 }
 
 circle:hover {
@@ -440,4 +445,65 @@ dl.info[hidden]:not(:hover, :focus-within) {
 }
 circle.selected {
   fill: #ff6b6b;
+}
+
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+
+  > * {
+    flex: 1;
+  }
+}
+
+#scatter-story {
+  position: relative;
+}
+
+#scatter-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  overflow: visible;
+  align-self: start;
+}
+
+.step {
+  padding-bottom: 2rem;
+}
+
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin: 1.5rem 0;
+
+  > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  dt {
+    grid-column: 1;
+  }
+
+  dd {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: start;
+    gap: 0.15em;
+    padding-top: 0.6em;
+    margin-left: 0;
+  }
+}
+
+.loc {
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color, steelblue);
+  border-radius: 50%;
 }
